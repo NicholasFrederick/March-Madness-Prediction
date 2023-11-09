@@ -5,6 +5,7 @@ datatest=data1 %>% filter(YEAR == 2015) %>% mutate(guess=76.3730+1.4671*ADJDE-1.
 model4 = lm(POSTSEASON ~ ADJDE+ADJOE, data = datatest)
 #summary(model4)
 ```
+
 Formula 2: Important Variables 
 ```
 datatest1=data1 %>% filter(YEAR == 2015) %>% mutate(guess=-10.4514+1.1880*SEED-1.8632*W+3.7798*ADJDE-2.3714*ADJOE+68.8196*BARTHAG
@@ -13,13 +14,15 @@ datatest1=data1 %>% filter(YEAR == 2015) %>% mutate(guess=-10.4514+1.1880*SEED-1
 model4 = lm(POSTSEASON ~ SEED+W+TORD+DRB+FTR+WAB+TWOP_D+BARTHAG+ADJDE+ADJOE, data = datatest)
 #summary(model4)
 ```
+
 Formula 3: Basic Variables 
 ```
 datatest2=data1 %>% filter(YEAR == 2015) %>% mutate(guess=55.3479+0.3623*SEED-1.5262*W+WAB*0.3918)
 model5 = lm(POSTSEASON ~ W+SEED+WAB, data = datatest)
 #summary(model5)
 ```
-Formula 4: Defense 
+
+Formula 4: Offense
 ```{r}
 datatest3=data1 %>% filter(YEAR == 2015) %>% mutate(guess=205.0355-2.495*ADJOE+1.8113*EFG_O-1.3013*TOR+
                                                     ORB*0.1067+FTR*0.3631+0.5797*THREEP_O-0.8719*TWOP_O+0.7859*ADJ_T)
@@ -27,7 +30,17 @@ datatest3=data1 %>% filter(YEAR == 2015) %>% mutate(guess=205.0355-2.495*ADJOE+1
 model6 = lm(POSTSEASON ~ ADJOE+EFG_O+TOR+ORB+FTR+THREEP_O+TWOP_O+ADJ_T, data = datatest3)
 #summary(model6)
 ```
-Formula 5: Offense
+
+Formula 5: Defense
+```{r}
+datatest4=data1 %>% filter(YEAR == 2017) %>% mutate(guess=-138.3163+3.0282*ADJDE+5.0483*EFG_D+1.54*TORD-
+                                                    DRB*1.4060+FTRD*0.3314-3.7031*THREEP_D-4.884*TWOP_D)
+#glimpse(datatest)
+model6 = lm(POSTSEASON ~ ADJDE+EFG_D+TORD+DRB+FTRD+THREEP_D+TWOP_D, data = datatest4)
+#summary(model6)
+```
+
+Formula 6: Seeding
 ```
 datatest5=data1 %>% filter(YEAR == 2013) %>% mutate(guess=2.45530+0.67538*ADJDE-0.67537*ADJOE+12.36019*BARTHAG
                                                     +0.19725*EFG_O+FTRD*0.05740-ADJ_T*0.08455)
