@@ -11,7 +11,7 @@ Download the data sets by Andrew Sundberg, which is updated yearly. <br>
 If the files do not work, use the following link: https://www.kaggle.com/datasets/andrewsundberg/college-basketball-dataset?select=cbb13.csv <br>
 Note: You will have to create a seperate data for only playoff teams with numeric values for each round if you do this.
 
-## Variables, Formulas, and Code
+## Variables and Code
 model-The main data, looked at wins <br>
 model1-The postseason data, looked at March Madness succeess
 
@@ -34,3 +34,19 @@ importance(forest) %>% as.data.frame() %>%
 model.backward=step(model1, direction="backward")
 summary(model1)
 ```
+
+datatest0-5: The datasets relating to the formulas regarding March Madness and post season success. <br>
+datapre0-4: The datasets relating to predicting regular season success. <br>
+
+Example of how both would work.
+
+```{r}
+datatest=data1 %>% filter(YEAR == 2015) %>% mutate(guess=76.3730+1.4671*ADJDE-1.5632*ADJOE)
+model4 = lm(POSTSEASON ~ ADJDE+ADJOE, data = datatest)
+```
+
+```{r}
+datapre=data %>% filter(YEAR == 2021) %>% mutate(guess=5.21235-0.38954*ADJDE+0.49404*ADJOE)
+pre = lm(W ~ ADJDE+ADJOE, data = datapre)
+```
+Note: You will have to changed the year for both of these every time you want to try a different year for different results.
