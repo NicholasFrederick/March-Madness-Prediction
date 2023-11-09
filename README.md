@@ -3,6 +3,17 @@ This code looks to test data over the course of previous years of march madness 
 There are 5 different equations that were tested, with the basic variables and the important variables performing the best.
 All of these equations will be posted to see what coparison is needed to be made. 
 
+## Introduction 
+This project seeks to determine which regular-season factors can predict team success for Division I Men’s basketball teams—specifically related to NCAA March Madness tournament outcomes.
+
+## Objectives 
+The goals and objectives for the project include:
+- Determine the effect of regular season statistics on postseason outcomes
+- Determine patterns of upsets in March Madness. Is it truly random, or is there a pattern to underdogs winning?
+- Compare regular season outcomes with postseason outcomes. Do they have the same trends?
+- Develop a model to predict team outcomes for new seasons, regular and postseason
+- Compare tournament outcomes across different seasons
+
 ## Requirements
 R 4.2.3
 
@@ -10,6 +21,8 @@ R 4.2.3
 Download the data sets by Andrew Sundberg, which is updated yearly. <br>
 If the files do not work, use the following link: https://www.kaggle.com/datasets/andrewsundberg/college-basketball-dataset?select=cbb13.csv <br>
 Note: You will have to create a seperate data for only playoff teams with numeric values for each round if you do this.
+
+The original dataset contains 23 variables on over 300 Division I Men’s basketball teams. It contains data for the years 2013-2023, and it is updated each year after the tournament. 
 
 ## Variables and Code
 model-The main data, looked at wins <br>
