@@ -1,1 +1,38 @@
-
+Formula 1: ADJDE and ADJOE only 
+```{r}
+datatest=data1 %>% filter(YEAR == 2015) %>% mutate(guess=76.3730+1.4671*ADJDE-1.5632*ADJOE)
+#glimpse(datatest)
+model4 = lm(POSTSEASON ~ ADJDE+ADJOE, data = datatest)
+#summary(model4)
+```
+Formula 2: Important Variables 
+```
+datatest1=data1 %>% filter(YEAR == 2015) %>% mutate(guess=-10.4514+1.1880*SEED-1.8632*W+3.7798*ADJDE-2.3714*ADJOE+68.8196*BARTHAG
+                                                   +1.2750*TORD-1.3082*DRB+0.3124*FTR-1.4533*TWOP_D+2.248*WAB)
+#glimpse(datatest)
+model4 = lm(POSTSEASON ~ SEED+W+TORD+DRB+FTR+WAB+TWOP_D+BARTHAG+ADJDE+ADJOE, data = datatest)
+#summary(model4)
+```
+Formula 3: Basic Variables 
+```
+datatest2=data1 %>% filter(YEAR == 2015) %>% mutate(guess=55.3479+0.3623*SEED-1.5262*W+WAB*0.3918)
+model5 = lm(POSTSEASON ~ W+SEED+WAB, data = datatest)
+#summary(model5)
+```
+Formula 4: Defense 
+```{r}
+datatest3=data1 %>% filter(YEAR == 2015) %>% mutate(guess=205.0355-2.495*ADJOE+1.8113*EFG_O-1.3013*TOR+
+                                                    ORB*0.1067+FTR*0.3631+0.5797*THREEP_O-0.8719*TWOP_O+0.7859*ADJ_T)
+#glimpse(datatest)
+model6 = lm(POSTSEASON ~ ADJOE+EFG_O+TOR+ORB+FTR+THREEP_O+TWOP_O+ADJ_T, data = datatest3)
+#summary(model6)
+```
+Formula 5: Offense
+```
+datatest5=data1 %>% filter(YEAR == 2013) %>% mutate(guess=2.45530+0.67538*ADJDE-0.67537*ADJOE+12.36019*BARTHAG
+                                                    +0.19725*EFG_O+FTRD*0.05740-ADJ_T*0.08455)
+model6 = lm(SEED ~ ADJDE+ADJOE+BARTHAG+EFG_O+FTRD+ADJ_T, data = datatest5)
+#summary(model6)
+```
+Note: Remove the # if you wish to see the models themselves, otherwise they will take up a lot of the screen. You will see the dataset on the right side of the screen.
+Click it when you wish to access it, compare the teams on the bracket, and the team with the lower number is predicted to move on in the tournament.
