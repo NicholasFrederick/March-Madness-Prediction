@@ -39,3 +39,5 @@ datapre4=data %>% filter(YEAR == 2013) %>% mutate(guess=1.373930+ADJDE*0.09432+B
 pre4 = lm(W ~ ADJDE+EFG_D+TORD+DRB+FTRD+THREEP_D+TWOP_D, data = datapre4)
 summary(pre4)
 ```
+Note: Remove the # if you wish to see the models themselves, otherwise they will take up a lot of the screen. You will see the dataset on the right side of the screen.
+Click it when you wish to access it, compare the teams on the bracket, and the team with the lower number is predicted to move on in the regular season.
