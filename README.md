@@ -13,6 +13,7 @@ Note: You will have to create a seperate data for only playoff teams with numeri
 
 ## Variables, Formulas, and Code
 model-The main data, looked at wins
+
 model1-The postseason data, looked at March Madness succeess
 
 The following Code was used to find the first formulas:
