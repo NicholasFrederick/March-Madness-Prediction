@@ -1,0 +1,41 @@
+Formula 1:Only ADJDE and ADJOE
+```{r}
+datapre=data %>% filter(YEAR == 2021) %>% mutate(guess=5.21235-0.38954*ADJDE+0.49404*ADJOE)
+glimpse(datatest)
+pre = lm(W ~ ADJDE+ADJOE, data = datapre)
+summary(pre)
+```
+
+Formula 2:Important Variables
+```{r}
+datapre1=data %>% filter(YEAR == 2013) %>% mutate(guess=88.63371-ADJDE*0.24796-EFG_D*1.17020+TORD*0.51659
+                                                  -DRB*0.37067-FTRD*0.0211+0.22497*THREEP_D+TWOP_D*0.26545)
+pre1 = lm(W ~ ADJDE+EFG_D+TORD+DRB+FTRD+THREEP_D+TWOP_D, data = datapre1)
+summary(pre1)
+```
+
+Formula 3:Basic Variables
+```{r}
+datapre2=data %>% filter(YEAR == 2014) %>% mutate(guess=15.73771+0.59479*THREEP_O-0.67821*THREEP_D+
+                                                    0.71905*TWOP_O-0.69906*TWOP_D+0.13843*FTR-0.06921*FTRD)
+#glimpse(datatest)
+pre = lm(W ~ THREEP_O+THREEP_D+TWOP_O+TWOP_D+FTR+FTRD, data = datapre2)
+summary(pre)
+```
+
+Formula 4:Offense
+```{r}
+datapre3=data %>% filter(YEAR == 2013) %>% mutate(guess=-40.12261+0.199*ADJOE+0.50192*EFG_O-0.74015*TOR+ORB*0.48263
+                                                  +0.12185*FTR+0.04667*THREEP_O+0.33595*TWOP_O-ADJ_T*0.17809)
+pre3 = lm(W ~ ADJOE+EFG_O+TOR+ORB+FTR+THREEP_O+TWOP_O+ADJ_T, data = datapre3)
+summary(pre3)
+```
+
+Formula 5:Defense
+```{r}
+datapre4=data %>% filter(YEAR == 2013) %>% mutate(guess=1.373930+ADJDE*0.09432+BARTHAG*4.012412+EFG_O*0.811507
+                                                  -EFG_D*0.847656-TOR*0.779007+TORD*0.786747+ORB*0.335041
+                                                  -DRB*0.292518+FTR*0.124129-FTRD*0.126843+ADJ_T*0.055060)
+pre4 = lm(W ~ ADJDE+EFG_D+TORD+DRB+FTRD+THREEP_D+TWOP_D, data = datapre4)
+summary(pre4)
+```
