@@ -34,3 +34,5 @@ importance(forest) %>% as.data.frame() %>%
 model.backward=step(model1, direction="backward")
 summary(model1)
 ```
+
+**RUN ALL OF THIS FIRST OR IT WILL NOT WORK!**
