@@ -1,0 +1,13 @@
+```{r}
+data2<-data[complete.cases(basketball[ , c('SEED', 'POSTSEASON')]), ]%>% filter(POSTSEASON!="NA")
+data2$SEED = as.numeric(data2$SEED)
+  
+data2$POSTSEASON <- factor(data2$POSTSEASON , 
+                                      levels=c("N/A","R68", "R64", "R32", "S16", "E8", "F4", "2ND", "Champions"))
+         
+data2 %>% ggplot(aes(x=POSTSEASON, y=ADJOE))+geom_boxplot(aes(fill=POSTSEASON))+ggtitle("Adjusted Offensive Efficiency Grouped by Post Season Outcomes")+xlab("Post Season Outcome")+ylab("Adjusted Offensive Efficiency")
+
+data2 %>% ggplot(aes(x=POSTSEASON,y=SEED))+geom_boxplot(aes(fill=POSTSEASON))+ggtitle("Tournament Seed Grouped by Post Season Outcomes", subtitle = "2013-2023")+xlab("Post Season Outcome")+ylab("Tournament Seed")
+
+
+```
