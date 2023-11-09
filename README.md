@@ -7,13 +7,12 @@ All of these equations will be posted to see what coparison is needed to be made
 R 4.2.3
 
 ## Data
-Download the data sets by Andrew Sundberg, which is updated yearly.
-If the files do not work, use the following link: https://www.kaggle.com/datasets/andrewsundberg/college-basketball-dataset?select=cbb13.csv
+Download the data sets by Andrew Sundberg, which is updated yearly. <br>
+If the files do not work, use the following link: https://www.kaggle.com/datasets/andrewsundberg/college-basketball-dataset?select=cbb13.csv <br>
 Note: You will have to create a seperate data for only playoff teams with numeric values for each round if you do this.
 
 ## Variables, Formulas, and Code
-model-The main data, looked at wins
-
+model-The main data, looked at wins <br>
 model1-The postseason data, looked at March Madness succeess
 
 The following Code was used to find the first formulas:
