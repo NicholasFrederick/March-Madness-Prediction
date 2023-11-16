@@ -28,7 +28,7 @@ The original dataset contains 23 variables on over 300 Division I Men’s basket
 model-The main data, looked at wins <br>
 model1-The postseason data, looked at March Madness succeess
 
-To run the code, you must first run the code in the Set-Up file in R. Run ALL of it for it to function properly. Make sure you have both the R code and the data you have downloaded in the same file. If you do not, the code will not work and it will return an error. 
+To run the code, you must first run the code in the Set-Up file in R. Run ALL of it for it to function properly. Make sure you have both the R code and the data you have downloaded in the same file. If you do not, the code will not work and it will return an error. Run it in the order it is set up in the file, or it will not function properly.
 
 The following Code was used to find the first formulas:
 ```
