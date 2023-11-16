@@ -50,7 +50,8 @@ model.backward=step(model1, direction="backward")
 summary(model1)
 ```
 
-datatest0-5: The datasets relating to the formulas regarding March Madness and post season success. <br>
+datatest0-4: The datasets relating to the formulas regarding March Madness and post season success. <br>
+datatest5: The dataset relating to the formula regarding seeding in March Madness. <br>
 datapre0-4: The datasets relating to predicting regular season success. <br>
 
 Example of how both would work.
