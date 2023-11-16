@@ -92,6 +92,9 @@ Predicted Wins4=88.63371-ADJDEx0.24796-EFG_Dx1.17020+TORDx0.51659-DRBx0.37067-FT
 <br>
 Predicted Wins5=1.373930+ADJDEx0.09432+BARTHAGx4.012412+EFG_Ox0.811507-EFG_Dx0.847656-TORx0.779007+TORDx0.786747+ORBx0.335041-DRBx0.292518+FTRx0.124129-FTRDx0.126843+ADJ_Tx0.055060(Related to Important Variables)
 
+## How to Continue: Postseason
+Once you have generated your dataset for the March Madness teams, you will noticed a guess variable at the end of the data. That is the variable that predicts what placement, or how far they will go, in the tournament. When two teams go against each other, you will choose the LOWER number of the two teams as the winner of the match. You will do this for all 63 games to complete the entire bracket. We have provided the actual March Madness Brackets, being Actual Results in powerpoint, for you to compare your bracket to the real thing. We typed the games we got wrong in red, so it is a good idea to make some marker to keep track of the games you had gotten incorrect.
+
 ## Results
 ADJDE and ADJOE only:about 69% accurate <br>
 <br>
