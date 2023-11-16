@@ -24,6 +24,13 @@ Note: You will have to create a seperate data for only playoff teams with numeri
 
 The original dataset contains 23 variables on over 300 Division I Men’s basketball teams. It contains data for the years 2013-2023, and it is updated each year after the tournament. 
 
+## Download Steps 
+1. Check to make sure you have the right version of R installed
+2. Navigate to the "Code" folder to download and run the "Set-up" file
+3. Download and run the "Example for EDA" if interested in looking at trends in the data
+4. Download and run "Formulas for Postseaosn" file and "Formulas for Wins" file, depending on desired response variable
+5. Compare model results with official March Madness results (located in the "Data" folder)
+
 ## Variables and Code
 model-The main data, looked at wins <br>
 model1-The postseason data, looked at March Madness succeess
