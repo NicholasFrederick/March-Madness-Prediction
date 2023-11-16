@@ -28,6 +28,8 @@ The original dataset contains 23 variables on over 300 Division I Men’s basket
 model-The main data, looked at wins <br>
 model1-The postseason data, looked at March Madness succeess
 
+To run the code, you must first run the code in the Set-Up file in R. Run ALL of it for it to function properly. Make sure you have both the R code and the data you have downloaded in the same file. If you do not, the code will not work and it will return an error. 
+
 The following Code was used to find the first formulas:
 ```
 model = lm(W ~ G+ADJDE+ADJOE+BARTHAG+EFG_O+EFG_D+TOR+TORD+ORB+DRB+FTR+
@@ -63,6 +65,8 @@ datapre=data %>% filter(YEAR == 2021) %>% mutate(guess=5.21235-0.38954*ADJDE+0.4
 pre = lm(W ~ ADJDE+ADJOE, data = datapre)
 ```
 Note: You will have to changed the year for both of these every time you want to try a different year for different results.
+
+It does not matter which way you do it from here. You can choose to look at wins or March Madness success, and do any of the following formulas at any way you choose. Just make sure you label the variables right, because they have only a one character differnece when doing so and change the year to look at different results.
 
 
 ## Formulas
