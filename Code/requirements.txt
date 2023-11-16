@@ -1,8 +1,8 @@
-Requirements\ <br>
+Requirements 
 
-Version: R 4.2.3\ <br>
+Version: R 4.2.3
 
-Required Packages:\
+Required Packages:
 ggplot2
 tidyverse
 mdsr
