@@ -103,7 +103,7 @@ Significant Variables:about  72% accurate <br>
 <br>
 Basic Variables:about 72% accurate <br>
 <br>
-Offense Only:about 65% accurate <br>
+Offense Only:about 64% accurate <br>
 <br>
 Defense Only:about 59% accurate <br>
 <br>
