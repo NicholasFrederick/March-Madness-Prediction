@@ -1,6 +1,6 @@
-Requirements\
+Requirements\ <br>
 
-Version: R 4.2.3\
+Version: R 4.2.3\ <br>
 
 Required Packages:\
 ggplot2
