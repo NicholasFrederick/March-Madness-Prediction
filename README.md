@@ -114,7 +114,11 @@ Offense Only:about 64% accurate <br>
 <br>
 Defense Only:about 59% accurate <br>
 <br>
-Predicting wins varied heavily, though the most consistent and accurate was equatioin 2 regarding basic variables being 68-70% accurate over 10 years. <br>
+Predicting wins varied heavily, though the most consistent and accurate was equation 2 regarding basic variables being 68-70% accurate over 10 years. <br>
+Equation 1 ranged from 55-77%, being very inconsistent. <br>
+Equation 3 was not as bad, but less accurate with 50% to 62%. <br>
+Equation 4 had more wins than games played regularly, sometimes 10+ more, and was about 50% to 65% accurate. <br>
+Equation 5 had the opposite problem, having less wins than games played and sometimes going into the negatives, ranging from 64% to 70% accurate. This makes it the second most accurate and consistent of the equations. <br>
 
 Brackets(both predicted and actual results) will be provided.
 
