@@ -96,7 +96,7 @@ Predicted Wins2=15.73771+0.59479xTHREEP_O-0.67821xTHREEP_D+0.71905xTWOP_O-0.6990
 <br>
 Predicted Wins3=-40.12261+0.199xADJOE+0.50192xEFG_O-0.74015xTOR+ORBx0.48263+0.12185xFTR+0.04667xTHREEP_O+0.33595xTWOP_O-ADJ_Tx0.17809(Related to Offense) <br>
 <br>
-Predicted Wins4=59.34784-ADJDEx0.16006-EFG_Dx1.16557+TORDx0.29898-DRBx0.19832-FTRDx0.11869+0.51144xTHREEP_D+TWOP_Dx0.48645 (Related to Defense) <br>
+Predicted Wins4=88.63371-ADJDEx0.24796-EFG_Dx1.17020+TORDx0.51659-DRBx0.37067-FTRDx0.0211+0.22497xTHREEP_D+TWOP_Dx0.26545 (Related to Defense) <br>
 <br>
 Predicted Wins5=1.373930+ADJDEx0.09432+BARTHAGx4.012412+EFG_Ox0.811507-EFG_Dx0.847656-TORx0.779007+TORDx0.786747+ORBx0.335041-DRBx0.292518+FTRx0.124129-FTRDx0.126843+ADJ_Tx0.055060(Related to Important Variables)
 
@@ -117,7 +117,7 @@ Defense Only:about 59% accurate <br>
 Predicting wins varied heavily, though the most consistent and accurate was equation 2 regarding basic variables being 68-70% accurate over 10 years. <br>
 Equation 1 ranged from 55-77%, being very inconsistent. <br>
 Equation 3 was not as bad, but less accurate with 50% to 62%. <br>
-Equation 4 had more wins than games played regularly, sometimes 10+ more, and was about 50% to 65% accurate. Also did not have enough wins for the great teams. <br>
+Equation 4 had more wins than games played regularly, sometimes 10+ more, and was about 50% to 65% accurate. <br>
 Equation 5 had the opposite problem, having less wins than games played and sometimes going into the negatives, ranging from 64% to 70% accurate. This makes it the second most accurate and consistent of the equations. <br>
 
 Brackets(both predicted and actual results) will be provided.
